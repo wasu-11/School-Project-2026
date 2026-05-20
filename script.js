@@ -1,3 +1,10 @@
+document.querySelectorAll(".card button").forEach(function (btn) {
+  const link = btn.closest(".card").querySelector(".card-link");
+  btn.addEventListener("click", function () {
+    window.location.href = link.href;
+  });
+});
+
 const searchInput = document.getElementById("searchInput");
 const cards = document.querySelectorAll(".card");
 const resultText = document.getElementById("resultText");
